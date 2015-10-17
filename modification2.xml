@@ -898,9 +898,8 @@
 		if($topicOptions['poll'] !== NULL)
 			$smcFunc['db_query']('', '
 				UPDATE {db_prefix}polls
-				SET ID_TOPIC = {int:id_topic}
-				WHERE ID_POLL = {int:poll}
-				LIMIT 1',
+				SET id_topic = {int:id_topic}
+				WHERE id_poll = {int:poll}',
 				array(
 					'id_topic' => $topicOptions['id'],
 					'poll' => $topicOptions['poll'],
