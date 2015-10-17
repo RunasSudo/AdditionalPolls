@@ -1,4 +1,4 @@
-[size=x-large]Additional Polls v1.2.1[/size]
+[size=x-large]Additional Polls v1.3.0[/size]
 [hr]
 Removes the restriction that prevents you from having more than one poll in a topic.
 

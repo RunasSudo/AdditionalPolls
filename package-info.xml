@@ -2,11 +2,11 @@
 <!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<!-- For the id, always use something unique - put your name, a colon, and then the package name. -->
-	<id>WWakerFAN:AdditionalPolls</id>
+	<id>RunasSudo:AdditionalPolls</id>
 	<!-- Below should be the name of this package. -->
 	<name>Additional Polls</name>
 	<!-- The version of this modification.  Keep it numeric so PHP can tell that old < new. -->
-	<version>1.2.2</version>
+	<version>1.3.0</version>
 
 	<!-- Type, one of: modification, avatar, language. -->
 	<type>modification</type>
@@ -22,7 +22,7 @@
 		<modification type="file" format="xml" reverse="true">modification.xml</modification>
 	</uninstall>
 	
-	<install for="2.0 RC4">
+	<install for="2.0.11">
 		<readme type="file" parsebbc="true">readme2.txt</readme>
 		<modification type="file" format="xml">modification2.xml</modification>
 		<database type="file">install2.php</database>
