@@ -177,9 +177,9 @@
 		</operation>
 		
 		<operation>
-			<search position="replace"><![CDATA[$context['show_view_results_button'] = $context['allow_vote'] && (!$context['allow_poll_view'] || !$context['poll']['show_results'] || !$context['poll']['has_voted']);]]></search>
+			<search position="replace"><![CDATA[$context['show_view_results_button'] = $context['allow_vote'] && $context['allow_poll_view'] && !$context['poll']['show_results'];]]></search>
 		
-			<add><![CDATA[$context['poll']['show_view_results_button'] = $context['poll']['allow_vote'] && (!$context['poll']['allow_poll_view'] || !$context['poll']['show_results'] || !$context['poll']['has_voted']);]]></add>
+			<add><![CDATA[$context['poll']['show_view_results_button'] = $context['poll']['allow_vote'] && $context['poll']['allow_poll_view'] && !$context['poll']['show_results'];]]></add>
 		</operation>
 		
 		<operation>
@@ -960,7 +960,7 @@
 			<search position="replace"><![CDATA[#poll]]></search>
 			<add><![CDATA[.poll]]></add>			
 		</operation>
-		
+	
 		<operation>
 			<search position="replace"><![CDATA[#poll]]></search>
 			<add><![CDATA[.poll]]></add>			
